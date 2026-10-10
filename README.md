@@ -1,31 +1,34 @@
 # SpreadJS Dev Skill · Demo 工程
 
-本目录是 SpreadJS「常见问题」Demo 集合，配合 `SKILL.md` 使用。所有 demo **共用一个 `node_modules`**（位于本目录根），不存在每个 demo 各装一份依赖的情况。
+本仓库是 SpreadJS「常见问题」Demo 集合，以 **Codex 插件**形态发布，技能内容位于 `skills/spreadjs-dev-skill/`，配合其中的 `SKILL.md` 使用。所有 demo **共用一个 `node_modules`**（位于 `skills/spreadjs-dev-skill/`），不存在每个 demo 各装一份依赖的情况。
 
 ## 目录结构
 
 ```
-spreadjs-dev-skill/
-├── SKILL.md                      # 技能说明：编码注意事项 + Demo 索引
-├── package.json                  # 共享依赖（SpreadJS 全家桶 + vite + file-saver）
-├── vite.config.js                # Vite 配置：bare import 向上解析到根 node_modules
+spreadjs-dev-skill/                    # 仓库根 = Codex 插件根
+├── .codex-plugin/plugin.json          # 插件清单（skills 指向 ./skills/）
 ├── README.md
-└── references/                   # Demo 集合（SKILL.md 中的 references/ 路径即指这里）
-    ├── index.html                # Demo 总览页（npm run dev 后自动打开）
-    ├── _shared/                  # 各 demo 共用的页面外壳与样式
-    │   ├── shell.js
-    │   ├── shell.css
-    │   └── designerShell.js
-    ├── demo-01-large-data-performance/
-    │   ├── index.html
-    │   └── index.js
-    └── ...（共 24 个 demo）
+└── skills/spreadjs-dev-skill/         # 技能目录：引用按技能目录解析
+    ├── SKILL.md                       # 技能说明：编码注意事项 + Demo 索引
+    ├── package.json                   # 共享依赖（SpreadJS 全家桶 + vite + file-saver）
+    ├── pnpm-lock.yaml
+    ├── vite.config.js                 # Vite 配置：bare import 向上解析到本目录 node_modules
+    └── references/                    # Demo 集合（SKILL.md 中的 references/ 路径即指这里）
+        ├── index.html                 # Demo 总览页（npm run dev 后自动打开）
+        ├── _shared/                   # 各 demo 共用的页面外壳与样式
+        │   ├── shell.js
+        │   ├── shell.css
+        │   └── designerShell.js
+        ├── demo-01-large-data-performance/
+        │   ├── index.html
+        │   └── index.js
+        └── ...（共 24 个 demo）
 ```
 
 ## 运行方式
 
 ```bash
-cd spreadjs-dev-skill
+cd skills/spreadjs-dev-skill
 npm install        # 只需一次，所有 demo 共享该 node_modules
 npm run dev        # 启动 Vite，自动打开 http://localhost:5173/references/
 ```
