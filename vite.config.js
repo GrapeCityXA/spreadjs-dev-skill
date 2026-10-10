@@ -5,11 +5,11 @@ import { defineConfig } from 'vite'
 //   - 每个 demo 位于 references/<demo-folder>/，含 index.html + index.js。
 //   - demo 里的 bare import（如 '@grapecity-software/spread-sheets'）会被 Vite
 //     逐级向上解析到根目录的 node_modules，因此只需安装一次依赖。
-//   - 开发：`npm run dev`，浏览器自动打开 demo 总览页，点选任一 demo 进入。
+//   - 开发：`npm run dev`，浏览器自动打开 demo 总览页（references/index.html），点选任一 demo 进入。
 export default defineConfig({
   server: {
     port: 5173,
-    open: '/'
+    open: '/references/'
   },
   // SpreadJS 体积较大，构建时调高分块告警阈值（仅演示工程需要）
   build: {
