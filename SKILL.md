@@ -1,9 +1,6 @@
 ---
 name: spreadjs-dev-skill
-display_name: SpreadJS 开发Skill
-display_name_en: SpreadJS Dev Skill
-description_zh: 用于编写、调试、审查 SpreadJS（葡萄城表格 / GrapeCity）前端电子表格组件的代码。覆盖工作簿/工作表/单元格、数据绑定、公式与自定义函数、Excel/CSV/SJS 导入导出、样式与条件格式、图表与形状、筛选排序、打印与 PDF、设计器 Designer、以及 React/Vue/Angular 集成。触发关键词：SpreadJS、葡萄城表格、表格控件、电子表格、GC.Spread.Sheets、Workbook、Worksheet、setDataSource、spread-sheets、@grapecity-software/spread-sheets、Designer 表格、表格 IO。
-description_en: For writing, debugging, and reviewing code for the SpreadJS (GrapeCity Spreadsheets) front-end spreadsheet component. Covers workbooks/worksheets/cells, data binding, formulas and custom functions, Excel/CSV/SJS import/export, styling and conditional formatting, charts and shapes, filtering and sorting, printing and PDF, the Designer, and React/Vue/Angular integration. Trigger keywords：SpreadJS, GrapeCity Spreadsheets, spreadsheet control, spreadsheet, GC.Spread.Sheets, Workbook, Worksheet, setDataSource, spread-sheets, @grapecity-software/spread-sheets, Designer, spreadsheet IO.
+description: 用于编写、调试、审查 SpreadJS（葡萄城表格 / GrapeCity）前端电子表格组件的代码。覆盖工作簿/工作表/单元格、数据绑定、公式与自定义函数、Excel/CSV/SJS 导入导出、样式与条件格式、图表与形状、筛选排序、打印与 PDF、设计器 Designer、以及 React/Vue/Angular 集成。触发关键词：SpreadJS、葡萄城表格、表格控件、电子表格、GC.Spread.Sheets、Workbook、Worksheet、setDataSource、spread-sheets、@grapecity-software/spread-sheets、Designer 表格、表格 IO。
 version: 1.0.0
 ---
 
